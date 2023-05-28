@@ -1,72 +1,25 @@
 <template>
   <div class="area">
     <div>
-      <span class="imp">1. 二级联动（不带“全部”选项）</span>
+      <span class="imp">选择国家地区</span>
       <el-cascader
         size="large"
-        :options="provinceAndCityData"
+        :options="worldData"
         v-model="selectedOptions1"
         @change="handleChange">
       </el-cascader>
     </div>
     <div class="bind">
       <div>绑定值：{{selectedOptions1}}</div>
-      <div>区域码转汉字：{{CodeToText[selectedOptions1[0]]}},{{CodeToText[selectedOptions1[1]]}}</div>
-      <div>汉字转区域码：{{convertTextToCode(CodeToText[selectedOptions1[0]], CodeToText[selectedOptions1[1]])}}</div>
-    </div>
-    <div class="three">
-      <span class="imp">2. 二级联动(带有“全部”选项)</span>
-      <el-cascader
-        size="large"
-        :options="provinceAndCityDataPlus"
-        v-model="selectedOptions3"
-        @change="handleChange">
-      </el-cascader>
-    </div>
-    <div class="bind">
-      <div>绑定值：{{selectedOptions3}}</div>
-      <div>区域码转汉字：{{CodeToText[selectedOptions3[0]]}},{{CodeToText[selectedOptions3[1]]}}</div>
-      <div>汉字转区域码：{{convertTextToCode(CodeToText[selectedOptions3[0]], CodeToText[selectedOptions3[1]])}}</div>
-    </div>
-    <div class="three">
-      <span class="imp">3. 三级联动（不带“全部”选项）</span>
-      <el-cascader
-        class="long"
-        size="large"
-        :options="regionData"
-        v-model="selectedOptions2"
-        @change="handleChange">
-      </el-cascader>
-    </div>
-    <div class="bind">
-      <div>绑定值：{{selectedOptions2}}</div>
-      <div>区域码转汉字：{{CodeToText[selectedOptions2[0]]}},{{CodeToText[selectedOptions2[1]]}},{{CodeToText[selectedOptions2[2]]}}</div>
-      <div>汉字转区域码：{{convertTextToCode(CodeToText[selectedOptions2[0]], CodeToText[selectedOptions2[1]], CodeToText[selectedOptions2[2]])}}</div>
-    </div>
-    <div class="three">
-      <span class="imp">4. 三级联动(带"全部选项")</span>
-      <el-cascader
-        size="large"
-        class="long"
-        :options="regionDataPlus"
-        v-model="selectedOptions4"
-        @change="handleChange">
-      </el-cascader>
-    </div>
-    <div class="bind">
-      <div>绑定值：{{selectedOptions4}}</div>
-      <div>区域码转汉字：{{CodeToText[selectedOptions4[0]]}},{{CodeToText[selectedOptions4[1]]}},{{CodeToText[selectedOptions4[2]]}}</div>
-      <div>汉字转区域码：{{convertTextToCode(CodeToText[selectedOptions4[0]], CodeToText[selectedOptions4[1]], CodeToText[selectedOptions4[2]])}}</div>
+      <div>区域码转汉字：{{CodeToText[selectedOptions1[0]]}}</div>
+      <div>汉字转区域码：{{convertTextToCode(CodeToText[selectedOptions1[0]])}}</div>
     </div>
   </div>
 </template>
 
 <script>
 import {
-  provinceAndCityData,
-  regionData,
-  provinceAndCityDataPlus,
-  regionDataPlus,
+  worldData,
   CodeToText,
   TextToCode
 } from "../dist/app.js";
@@ -76,15 +29,8 @@ export default {
     return {
       CodeToText,
       TextToCode,
-      BeiJing: CodeToText["110000"],
-      provinceAndCityData,
-      provinceAndCityDataPlus,
-      regionData,
-      regionDataPlus,
-      selectedOptions1: ["110000", "110100"],
-      selectedOptions2: ["120000", "120100", "120101"],
-      selectedOptions3: ["130000", ""],
-      selectedOptions4: ["120000", "120100", ""]
+      worldData,
+      selectedOptions1: [],
     };
   },
 
@@ -96,23 +42,14 @@ export default {
       let code = "";
       if (provinceText && this.TextToCode[provinceText]) {
         const province = this.TextToCode[provinceText];
-        code += province.code + ", ";
-        if (cityText && province[cityText]) {
-          const city = province[cityText];
-          code += city.code + ", ";
-          if (regionText && city[regionText]) {
-            code += city[regionText].code;
-          }
-        }
+        code += province.code;
       }
       return code;
     }
   },
 
   mounted() {
-    console.log(this.TextToCode["北京市"].code);
-    console.log(this.TextToCode["北京市"]["市辖区"].code);
-    console.log(this.TextToCode["北京市"]["市辖区"]["朝阳区"].code);
+   
   }
 };
 </script>
