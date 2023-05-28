@@ -10,19 +10,17 @@
       </el-cascader>
     </div>
     <div class="bind">
-      <div>绑定值：{{selectedOptions1}}</div>
-      <div>区域码转汉字：{{CodeToText[selectedOptions1[0]]}}</div>
-      <div>汉字转区域码：{{convertTextToCode(CodeToText[selectedOptions1[0]])}}</div>
+      <div>绑定值：{{ selectedOptions1 }}</div>
+      <div>区域码转汉字：{{ CodeToText[selectedOptions1[0]] }}</div>
+      <div>
+        汉字转区域码：{{ convertTextToCode(CodeToText[selectedOptions1[0]]) }}
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import {
-  worldData,
-  CodeToText,
-  TextToCode
-} from "../dist/app.js";
+import { worldData, CodeToText, TextToCode } from '../src/app.js'
 
 export default {
   data() {
@@ -30,28 +28,26 @@ export default {
       CodeToText,
       TextToCode,
       worldData,
-      selectedOptions1: [],
-    };
+      selectedOptions1: '',
+    }
   },
 
   methods: {
     handleChange(value) {
-      console.log(value);
+      console.log(value)
     },
     convertTextToCode(provinceText, cityText, regionText) {
-      let code = "";
+      let code = ''
       if (provinceText && this.TextToCode[provinceText]) {
-        const province = this.TextToCode[provinceText];
-        code += province.code;
+        const province = this.TextToCode[provinceText]
+        code += province.code
       }
-      return code;
-    }
+      return code
+    },
   },
 
-  mounted() {
-   
-  }
-};
+  mounted() {},
+}
 </script>
 
 <style>

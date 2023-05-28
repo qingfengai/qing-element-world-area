@@ -1,7 +1,7 @@
 {
   "name": "qing-element-world-area",
-  "version": "1.0.0",
-  "description": "Element UI 级联 世界地图数据",
+  "version": "1.0.2",
+  "description": "Element UI 级联 世界地图数据（含港澳台）",
   "main": "./dist/app.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.config.js --inline --hot",
@@ -16,13 +16,12 @@
     "element-ui",
     "vue",
     "vue2",
-    "世界地图",
-    "级联"
+    "世界地图"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qingfengai/element-china-area.git"
+    "url": "git+https://github.com/qingfengai/qing-element-world-area.git"
   },
   "dependencies": {
     "lodash-es": "^4.17.15"
