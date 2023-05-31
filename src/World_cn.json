@@ -2900,7 +2900,7 @@
 				]
 			},
 			"properties": {
-				"name": "阿拉伯联合酋长国",
+				"name": "阿联酋",
 				"childNum": 3
 			}
 		},
@@ -4364,7 +4364,7 @@
 				]
 			},
 			"properties": {
-				"name": "法属南半球和南极陆地",
+				"name": "法属南部和南极地区",
 				"childNum": 3
 			}
 		},
@@ -9733,7 +9733,7 @@
 				]
 			},
 			"properties": {
-				"name": "波黑.",
+				"name": "波黑",
 				"childNum": 1
 			}
 		},
@@ -14729,7 +14729,7 @@
 				]
 			},
 			"properties": {
-				"name": "中非共和国",
+				"name": "中非",
 				"childNum": 1
 			}
 		},
@@ -30696,7 +30696,7 @@
 				]
 			},
 			"properties": {
-				"name": "中国",
+				"name": "中国大陆",
 				"childNum": 15
 			}
 		},
@@ -31197,7 +31197,7 @@
 				]
 			},
 			"properties": {
-				"name": "科特迪瓦共和国",
+				"name": "科特迪瓦",
 				"childNum": 1
 			}
 		},
@@ -32371,7 +32371,7 @@
 				]
 			},
 			"properties": {
-				"name": "刚果民主共和国",
+				"name": "刚果（布）",
 				"childNum": 1
 			}
 		},
@@ -32672,7 +32672,7 @@
 				]
 			},
 			"properties": {
-				"name": "刚果",
+				"name": "刚果（金）",
 				"childNum": 1
 			}
 		},
@@ -34256,7 +34256,7 @@
 				]
 			},
 			"properties": {
-				"name": "N. 塞浦路斯",
+				"name": "北塞浦路斯",
 				"childNum": 1
 			}
 		},
@@ -34566,7 +34566,7 @@
 				]
 			},
 			"properties": {
-				"name": "捷克共和国.",
+				"name": "捷克",
 				"childNum": 1
 			}
 		},
@@ -36059,7 +36059,7 @@
 				]
 			},
 			"properties": {
-				"name": "多米尼加共和国",
+				"name": "多米尼加",
 				"childNum": 1
 			}
 		},
@@ -39887,7 +39887,7 @@
 				]
 			},
 			"properties": {
-				"name": "福克兰群岛",
+				"name": "马尔维纳斯群岛（福克兰）",
 				"childNum": 4
 			}
 		},
@@ -47717,7 +47717,7 @@
 				]
 			},
 			"properties": {
-				"name": "Heard I. and McDonald Is.",
+				"name": "赫德岛和麦克唐纳群岛",
 				"childNum": 1
 			}
 		},
@@ -53497,7 +53497,7 @@
 				]
 			},
 			"properties": {
-				"name": "Isle of Man",
+				"name": "马恩岛",
 				"childNum": 1
 			}
 		},
@@ -55517,7 +55517,7 @@
 				]
 			},
 			"properties": {
-				"name": "Br. Indian Ocean Ter.",
+				"name": "英属印度洋领地",
 				"childNum": 1
 			}
 		},
@@ -58491,7 +58491,7 @@
 				]
 			},
 			"properties": {
-				"name": "Jersey",
+				"name": "泽西岛",
 				"childNum": 1
 			}
 		},
@@ -67145,7 +67145,7 @@
 				]
 			},
 			"properties": {
-				"name": "马其顿",
+				"name": "北马其顿",
 				"childNum": 1
 			}
 		},
@@ -68923,7 +68923,7 @@
 				]
 			},
 			"properties": {
-				"name": "黑山共和国",
+				"name": "黑山",
 				"childNum": 1
 			}
 		},
@@ -72460,7 +72460,7 @@
 				]
 			},
 			"properties": {
-				"name": "纳米尼亚",
+				"name": "纳米比亚",
 				"childNum": 1
 			}
 		},
@@ -92940,7 +92940,7 @@
 				]
 			},
 			"properties": {
-				"name": "南苏丹共和国",
+				"name": "南苏丹",
 				"childNum": 1
 			}
 		},
@@ -93315,7 +93315,7 @@
 				]
 			},
 			"properties": {
-				"name": "S. Geo. and S. Sandw. Is.",
+				"name": "南乔治亚和南桑德韦奇群岛",
 				"childNum": 1
 			}
 		},
@@ -94046,7 +94046,7 @@
 				]
 			},
 			"properties": {
-				"name": "塞拉利",
+				"name": "塞拉利昂",
 				"childNum": 2
 			}
 		},
@@ -98169,7 +98169,7 @@
 				]
 			},
 			"properties": {
-				"name": "Timor-Leste",
+				"name": "东帝汶",
 				"childNum": 3
 			}
 		},
@@ -111286,7 +111286,7 @@
 				]
 			},
 			"properties": {
-				"name": "",
+				"name": "克什米尔（巴基斯坦）",
 				"childNum": 1
 			}
 		},
@@ -111585,7 +111585,7 @@
 				]
 			},
 			"properties": {
-				"name": "",
+				"name": "克什米尔（印度）",
 				"childNum": 1
 			}
 		}
