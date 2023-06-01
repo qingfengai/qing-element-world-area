@@ -1,7 +1,7 @@
 {
   "name": "qing-element-world-area",
-  "version": "1.0.2",
-  "description": "Element UI 级联 世界地图数据（含港澳台）",
+  "version": "1.0.3",
+  "description": "Element UI 世界地图国家和地区数据（含港澳台）",
   "main": "./dist/app.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.config.js --inline --hot",
