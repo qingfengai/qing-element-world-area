@@ -1,6 +1,6 @@
 {
   "name": "qing-element-world-area",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Element UI 世界地图国家和地区数据（含港澳台）",
   "main": "./dist/app.js",
   "scripts": {
